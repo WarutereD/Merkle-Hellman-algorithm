@@ -16,14 +16,14 @@ class Recipient:
         private_key = None
         public_key = None
 
-        "Сумма весов и поиск простого числа большего суммы"
+        ""
         for num in self.__primes:
             if num > weight:
                 q = num
                 break
 
         if q is not None:
-            "Поиск взаимно простого числа с q"
+            ""
             while True:
                 r = random.randint(2, q)
                 a, x2, y2 = self.__gsd_advance(q, r, 0, 1, 1, 0)
