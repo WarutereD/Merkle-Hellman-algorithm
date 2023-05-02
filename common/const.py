@@ -48,7 +48,7 @@ def decrypt(ciphertext, a, m, w):
 a = [2, 3, 6, 12, 25, 49, 98, 196]
 m = 397
 w = 35
-plaintext = "YeS"
+plaintext = "01100001"
 ciphertext =""
 if ciphertext == "":
     ciphertext = encrypt(plaintext, a, m, w)
